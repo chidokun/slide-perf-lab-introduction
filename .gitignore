@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Slidev build & export output
+dist/
+*.pdf
+*.pptx
+*-export*/
+.slidev/
+.vite/
+.remote-assets/
+components.d.ts
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Claude Code local settings
+.claude/settings.local.json
