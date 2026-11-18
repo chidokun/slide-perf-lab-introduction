@@ -1046,4 +1046,12 @@ table.mini .pill { margin-bottom: 0.1rem; }
 .who-head h3 { margin: 0 !important; }
 
 /* Character under the step list on tour slides */
-.side-char { display: block; width: 150px; margin: 0.8rem auto 0; filter: drop-shadow(0 6px 14px rgba(29, 27, 38, 0.12)); }
+.side-char { display: block; width: 130px; margin: 0.8rem auto 0; filter: drop-shadow(0 6px 14px rgba(29, 27, 38, 0.12)); }
+
+/* Gentle side-to-side sway for the slide 7 character */
+.side-char { transform-origin: 50% 90%; animation: char-sway 3.2s ease-in-out infinite; }
+@keyframes char-sway {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+@media (prefers-reduced-motion: reduce) { .side-char { animation: none; } }
