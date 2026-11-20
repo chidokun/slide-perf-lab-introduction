@@ -1055,3 +1055,18 @@ table.mini .pill { margin-bottom: 0.1rem; }
   50% { transform: rotate(6deg); }
 }
 @media (prefers-reduced-motion: reduce) { .side-char { animation: none; } }
+
+/* Two-stage timeline on the "What's next" slide */
+.future-line { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 2.4rem; margin-top: 4.6rem; }
+.future-line::before { content: ''; position: absolute; left: 0.45rem; right: 0; top: 0.45rem; border-top: 2px solid var(--accent); }
+.future-line::after { content: ''; position: absolute; left: calc(50% + 1.2rem); right: 0; top: 0.45rem; border-top: 2px dashed var(--line); background: var(--panel); }
+.fl-stage { position: relative; padding-top: 1.9rem; }
+.fl-dot { position: absolute; top: 0; left: 0; width: 1rem; height: 1rem; border-radius: 50%; border: 2px solid var(--accent); background: var(--panel); z-index: 1; }
+.fl-stage.done .fl-dot { background: var(--accent); }
+.fl-stage.next .fl-dot { border-style: dashed; }
+.fl-tag { display: inline-block; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+.fl-stage.next .fl-tag { color: var(--muted); }
+.fl-card { padding: 1.4rem 1.5rem !important; min-height: 7.5rem; }
+.fl-ico { font-size: 1.9rem; line-height: 1; display: block; margin-bottom: 0.7rem; }
+.fl-card p { font-size: 1.35rem !important; line-height: 1.5; color: var(--text) !important; margin: 0; }
+.fl-stage.next .fl-card { border-style: dashed; }

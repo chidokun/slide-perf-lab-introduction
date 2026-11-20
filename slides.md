@@ -919,6 +919,36 @@ EN: Results no longer live on one laptop. Hit Publish to git, CI rebuilds GitLab
 -->
 
 ---
+
+<div class="eyebrow"><Vi>Hướng phát triển</Vi><En>What's next</En></div>
+
+# <Vi>Từ một team đến mọi dự án</Vi><En>From one team to every project</En>
+
+<div class="future-line">
+  <div class="fl-stage done">
+    <span class="fl-dot"></span>
+    <span class="fl-tag"><Vi>Hiện tại</Vi><En>Today</En></span>
+    <div class="card fl-card">
+      <span class="fl-ico">✅</span>
+      <p><Vi>Đã tích hợp và hỗ trợ tốt công việc của team hiện tại.</Vi><En>Integrated and already supporting the current team's work well.</En></p>
+    </div>
+  </div>
+  <div class="fl-stage next">
+    <span class="fl-dot"></span>
+    <span class="fl-tag"><Vi>Hướng phát triển</Vi><En>Next</En></span>
+    <div class="card fl-card">
+      <span class="fl-ico">🤝</span>
+      <p><Vi>Để hỗ trợ cho mọi dự án, cần sự đóng góp từ mọi người vào tool.</Vi><En>To support every project, the tool needs contributions from everyone.</En></p>
+    </div>
+  </div>
+</div>
+
+<!--
+VI: Perf Lab đang chạy tốt cho team mình. Để dùng được cho mọi dự án, cần mọi người cùng đóng góp vào tool.
+EN: Perf Lab already works well for our team. To serve every project, it needs contributions from everyone.
+-->
+
+---
 layout: default
 class: cover-x
 ---
